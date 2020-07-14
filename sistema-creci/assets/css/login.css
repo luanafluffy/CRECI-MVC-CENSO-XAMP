@@ -1,0 +1,30 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(8, 12, 2, 0.171);
+}
+
+.form-login {
+    flex-basis: 450px;
+}
+
+.login-card .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.login-card .card-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-brasao-login {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
