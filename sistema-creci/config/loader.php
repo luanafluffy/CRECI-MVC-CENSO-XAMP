@@ -26,7 +26,7 @@ function loadTemplateView($viewName, $params = array()) {
 
     require_once(TEMPLATE_PATH . "/cabecalho.php");
     require_once(TEMPLATE_PATH . "/menu.php");
-    // require_once(VIEW_PATH . "/{$viewName}.php");
+    require_once(VIEW_PATH . "/{$viewName}.php");
     require_once(TEMPLATE_PATH . "/rodape.php");
 }
 
