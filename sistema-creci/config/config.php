@@ -1,5 +1,5 @@
 <?php
-
+// echo 'arquivo config...';
 date_default_timezone_set('America/Recife');
 setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese');
 // setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'portuguese');
@@ -21,3 +21,4 @@ require_once(realpath(MODEL_PATH . '/Model.php'));
 require_once(realpath(MODEL_PATH . '/User.php'));
 require_once(realpath(EXCEPTION_PATH . '/AppException.php'));
 require_once(realpath(EXCEPTION_PATH . '/ValidationException.php'));
+// echo 'okkkkk';
