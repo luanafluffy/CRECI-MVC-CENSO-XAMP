@@ -1,11 +1,27 @@
 <?php
+
+define('ROOT', dirname(__FILE__, 1));
+
 //Série de classes, constantes e diretórios
-require_once(dirname(__FILE__) . '/config/config.php');
+require_once(ROOT . '/src/config/config.php');
 
-$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+// Validando URL e fazendo com que funcione com os parametros com a função "parse_url"
+$uri = urldecode(
+    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
+);
 
-if($uri === '/sistema-creci/index.php' || $uri === '/sistema-creci/controller/login.php' || $uri === '/sistema-creci'){
-    $uri = '/controller/controle_censo.php';
+$uri = substr($uri, 15); //tirando o "sistema-creci/"
+
+if($uri === '/sistema-creci/' ||  $uri === 'sistema-creci/index.php') {
+    $uri = 'sistema-creci/src/controllers/controle_censo.php';
+    require_once(ROOT . $uri);
+
+}elseif(CONTROLLER_PATH . "/{$uri}"){
+     
+    require_once(CONTROLLER_PATH ."/{$uri}");
+
+}else {
+    echo $uri; 
+    // require_once('sistema-creci/erro.php');
 }
-
-require_once(dirname(__FILE__) .$uri);
+//O arquivo .htaccess força todas as requisições passarem pelo index.php

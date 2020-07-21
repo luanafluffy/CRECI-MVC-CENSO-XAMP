@@ -1,15 +1,2 @@
 Configuração de SQLSERVER ODBC
 https://docs.microsoft.com/en-us/sql/connect/php/loading-the-php-sql-driver?redirectedfrom=MSDN&view=sql-server-ver15
-
-Sistema CRECI - Controle de Censo
-
-
-"asstes" - Contém todos os arquivos de adicionais como: imagens do sistema, funcionalidade em javascript e estilos de todas as paginas com css.
-"config" - Contém todos os arquivos de configuração para utilização do controle quando requisitado.
-"controller" - Contém todos os arquivos que controlam a exibição de páginas (views) e, quando necessário, consultam as os arquivos de configuração.
-"exceptions" - Contém arquivos com classes para validação e campos do formulário e retornar mensagens de erros.
-"extras" - Contém um arquivo com a query de criação de tabelas e inserçao de dados do banco de dados utilizado.
-"view" - Contém todos os arquivos que são responsáveis visualmente por páginas do sistema 
-
-Objetivo
-Funcionalidade: 
